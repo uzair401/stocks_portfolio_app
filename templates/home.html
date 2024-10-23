@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+<table class="home_table table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Symbol</th>
+        <th scope="col">Name</th>
+        <th scope="col">Shares</th>
+        <th scope="col">Price</th>
+        <th scope="col">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in data %}
+    <tr>
+        <td>{{ item['symbol'] }}</td>
+        <td>{{ item['symbol'] }}</td>
+        <td>{{ item['shares'] }}</td>
+        <td>{{ results[loop.index0].price | float | usd }}</td>
+        <td>{{ (results[loop.index0].price * item['shares']) | float | usd }}</td>
+    </tr>
+{% endfor %}
+
+      <tr>
+        <th scope="row"></th>
+        <td></td>
+        <td></td>
+        <th>Cash</th>
+        <td>{{total_sum | float | usd}}</td>
+      </tr>
+      <tr>
+        <th scope="row"></th>
+        <td></td>
+        <td></td>
+        <th>Total</th>
+        {% for c in cash %}
+        <td>{{ c['cash']| float | usd }}</td>
+        {% endfor %}
+
+      </tr>
+    </tbody>
+  </table>
+{% endblock %}

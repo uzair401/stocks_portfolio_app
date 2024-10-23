@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+<h1>Quote Information</h1>
+{% if quote_result %}
+    <p>Name: {{ quote_result['name'] }}</p>
+    <p>Symbol: {{ quote_result['symbol'] }}</p>
+    <p>Price: {{ quote_result['price'] | usd}}</p>
+{% else %}
+    <p>Symbol not found or an error occurred while looking up the symbol.</p>
+{% endif %}
+{% endblock %}
