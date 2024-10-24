@@ -19,7 +19,7 @@
       {% for item in data %}
     <tr>
         <td>{{ item['symbol'] }}</td>
-        <td>{{ item['symbol'] }}</td>
+        <td>{{ item['name'] }}</td>
         <td>{{ item['shares'] }}</td>
         <td>{{ results[loop.index0].price | float | usd }}</td>
         <td>{{ (results[loop.index0].price * item['shares']) | float | usd }}</td>
