@@ -8,8 +8,8 @@
 <table class="home_table table table-striped">
     <thead>
       <tr>
-        <th scope="col">Symbol</th>
         <th scope="col">Name</th>
+        <th scope="col">Symbol</th>
         <th scope="col">Shares</th>
         <th scope="col">Price</th>
         <th scope="col">Total</th>
@@ -18,8 +18,8 @@
     <tbody>
       {% for item in data %}
     <tr>
-        <td>{{ item['symbol'] }}</td>
         <td>{{ item['name'] }}</td>
+        <td>{{ item['symbol'] }}</td>
         <td>{{ item['shares'] }}</td>
         <td>{{ results[loop.index0].price | float | usd }}</td>
         <td>{{ (results[loop.index0].price * item['shares']) | float | usd }}</td>
