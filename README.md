@@ -21,6 +21,23 @@ To run this project locally, you will need:
 - SQLite3
 - IEX Exchange API for fetching stock quotes
 
+## Images
+
+### Dashboard
+![My Image](https://github.com/uzair401/stocks_portfolio_app/blob/master/templates/Dashboard.png)
+
+### Qouting Stock price 
+![My Image](https://github.com/uzair401/stocks_portfolio_app/blob/master/templates/Qoute.png)
+### Stock selling 
+![My Image](https://github.com/uzair401/stocks_portfolio_app/blob/master/templates/Sell.png)
+### Transaction History
+![My Image](https://github.com/uzair401/stocks_portfolio_app/blob/master/templates/Transaction%20History.png)
+
+
+
+
+
+
 ## Installation
 
 ### Step 1: Clone the Repository
